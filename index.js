@@ -86,7 +86,7 @@ PDFImage.prototype = {
   constructConvertOptions: function () {
     return Object.keys(this.convertOptions).sort().map(function (optionName) {
       if (this.convertOptions[optionName] !== null) {
-        return optionName + " " + this.convertOptions[optionName];
+        return this.convertOptions[optionName];
       } else {
         return optionName;
       }
